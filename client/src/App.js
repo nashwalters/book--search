@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Search from "./pages/Search";
+import Navbar from "./pages/Saved";
 import "./App.css";
 
 const App = () => {
