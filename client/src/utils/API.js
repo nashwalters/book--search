@@ -1,17 +1,19 @@
-import axios from "axios";
+import axios from 'axios'
+require('dotenv').config()
+const APIkey = process.env.REACT_APP_APIKey
 
 export default {
-  searchBooks: query => {
-    return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
-  },
-  saveBook: book => {
-    console.log(book)
-    return axios.post("/api/books",book)
-  },
-  findSavedBooks: () => {
-    return axios.get("/api/books")
-  },
-  deleteSavedBook: (id) => {
-    return axios.delete(`/api/books/${id}`)
-  }
-};
+    searchBooks: function(query){
+        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyBD-PuZyjpsyWM7sqfplPDvDCTLzZ6bMYA`)
+    },
+    saveBooks: function(bookData){
+        return axios.post("/api/books", bookData)
+    },
+    getBooks: function(){
+        return axios.get("/api/books")
+    },
+    deleteBook: function(id){
+        console.log('[API.deleteBook] function reached ...')
+        return axios.delete("/api/books/" + id)
+    }
+}

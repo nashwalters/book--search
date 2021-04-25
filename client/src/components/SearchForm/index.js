@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import API from "../utils/API";
-import Card from "./Card";
+import API from "../../utils/API";
+import Card from "../Card";
 
 const  SearchForm = () => {
   const [search, setSearch] = useState("");

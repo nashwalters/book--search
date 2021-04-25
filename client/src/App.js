@@ -2,17 +2,28 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Search from "./pages/Search";
-import Navbar from "./pages/Saved";
+import Saved from "./pages/Saved";
 import "./App.css";
 
 const App = () => {
   return ( 
     <Router>
-      <Navbar/>
+      <div className="App">
+      <Navbar />
+      <div className="container">
         <Switch>
-          <Route exact path ="/" component={Search}/>
-          <Route exact path ="/saved" component={Saved}/>
+          {/* <Route path="/search">
+            <Search/>
+          </Route> */}
+          <Route path="/saved">
+            <Saved/>
+          </Route>
+          <Route path="/">
+            <Search/>
+          </Route>
         </Switch>
+      </div>
+    </div>
   </Router>
   );
 }

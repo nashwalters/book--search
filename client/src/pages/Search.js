@@ -1,12 +1,11 @@
-import React from 'react'
-import Banner from '../components/Banner'
-import SearchForm from '../components/SearchForm'
-import SearchResults from '../components/SearchResults'
+import React from "react";
+import Jumbotron from "../components/Jumbotron";
+import SearchForm from "../components/SearchForm";
 
 function Search(){
     return(
         <div className="container-fluid">
-            <Banner/>
+            <Jumbotron/>
             <SearchForm/>
             {/* <SearchResults /> */}
         </div>

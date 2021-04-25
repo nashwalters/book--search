@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import API from '../utils/API'
-import Alert from 'react-bootstrap/Alert'
-import Button from 'react-bootstrap/Button'
+import API from "../../utils/API";
+
 
 function Card(props) {
   
@@ -21,24 +20,12 @@ function Card(props) {
 }
   const [show, setShow] = useState(false);
 
-  function AlertDismissibleExample() {
-    
 
-    if (show){
-      return(
-        <Alert variant='success'>
-          Successfully saved book!
-        </Alert>
-      )
-    } else{
-      return null
-    }
-  }
 
   return (
     <div className="card mb-3">
       <div className="row g-0">
-        <AlertDismissibleExample />
+        
         <div className="col-md-4">
           <img src={props.image} alt="book image" />
         </div>
