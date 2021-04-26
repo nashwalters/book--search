@@ -1,15 +1,9 @@
-import React, {useState} from "react";
-import API from "../../utils/API";
+import React from "react";
+import API from '../../utils/API';
 
 
-function Card(props) {
-  
-  async function saveBooks(){
-    console.log('Clicked on save button')
-    let result = await API.saveBooks(props)
-    console.log('[saveBooks.card]', result)
-    
-  }
+
+function savedCard(props) {
 
   async function deleteBook(){
     console.log('Clicked on delete button')
@@ -18,14 +12,10 @@ function Card(props) {
     window.location.reload()
     console.log(result)
 }
-  const [show, setShow] = useState(false);
-
-
-
-  return (
+  
+return (
     <div className="card mb-3">
       <div className="row g-0">
-        
         <div className="col-md-4">
           <img src={props.image} alt="book image" />
         </div>
@@ -45,9 +35,6 @@ function Card(props) {
             <a href={props.link} target="_blank" type="button" className="btn btn-primary">
               View
             </a>
-            <button disabled={!saveBooks} onClick={() => {saveBooks(); setShow(true)}} value={props} type="button" className="btn btn-success">
-              Save
-            </button>
             <button disabled={!deleteBook} onClick={deleteBook} value={props} type="button" className="btn btn-danger">
               Delete
             </button>
@@ -58,4 +45,4 @@ function Card(props) {
   );
 }
 
-export default Card;
+export default savedCard;

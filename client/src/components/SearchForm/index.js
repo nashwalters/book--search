@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import API from "../../utils/API";
-import Card from "../Card";
+import Card from "../SearchCard";
 
-const  SearchForm = () => {
+const SearchForm = () => {
   const [search, setSearch] = useState("");
   const [books, setBooks] = useState([]);
 
@@ -17,7 +17,6 @@ const  SearchForm = () => {
     }
   }
 
-  
   function handleInputChange(event) {
     const searchQuery = event.target.value;
     searchQuery.replace(" ", "+");
@@ -73,3 +72,4 @@ const  SearchForm = () => {
 }
 
 export default SearchForm;
+

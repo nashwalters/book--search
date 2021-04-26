@@ -1,6 +1,6 @@
 import axios from 'axios'
 require('dotenv').config()
-const APIkey = process.env.REACT_APP_APIKey
+
 
 export default {
     searchBooks: function(query){
