@@ -1,29 +1,48 @@
-# Create React Express App
+# Google Books Search
 
-## About This Boilerplate
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Dependencies](#dependencies)
+* [Usage](#usage)
+* [Screenshot](#screenshot)
+* [Questions](#questions)
+* [Credits](#credits)
+* [License](#license)
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## Description
+This is a React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
 
-## Starting the app locally
+## Installation
+Node.js is needed for this application.
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+### Dependencies 
+* express
+* mongoose
+* axios
+* react-router-dom
 
-```
-npm install
-```
+## Usage
+The app allows users to search for books. The user enters the name of the book into the search area the click on search. A list of all the books related are populated in the results area. The user has the option to view information about the book, as well as to save the book. When the user click on the view button, they are taken to another window to view information on the book. When the user clicks on the save button, the book is saved. On the navbar, the user is able to navigate to the saved books. All the books the that the user saves will be populated in the results area on that page. The user has the option to view or delete the books.
 
-This should install node modules within the server and the client folder.
 
-After both installations complete, run the following command in your terminal:
+#### Screenshot
+<img src="" alt="app" width="600px">
 
-```
-npm start
-```
+## Questions  
+<a href="https://github.com/nashwalters"><img alt="Ask me anything" src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" target="_blank" /></a>  
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+If you have any questions, I can be reached via:
+* <bold>Email</bold>: nash.walters@outlook.com
 
-## Deployment (Heroku)
+## Credits
+* [Adam Simonini](https://github.com/adamsimonini)
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+## License     
+<a href=""><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" /></a>
+
+Copyright © 2021 Nash Walters,
+
+Released under the [MIT](https://github.com/nashwalters/eng-team-generator/blob/main/LICENSE) license.
+
