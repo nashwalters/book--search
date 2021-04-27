@@ -21,7 +21,7 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch-react", {
+mongoose.connect(process.env.MONGDB_URI || "mongodb://localhost/googlebooksearch-react", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

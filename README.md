@@ -27,8 +27,9 @@ Node.js is needed for this application.
 The app allows users to search for books. The user enters the name of the book into the search area the click on search. A list of all the books related are populated in the results area. The user has the option to view information about the book, as well as to save the book. When the user click on the view button, they are taken to another window to view information on the book. When the user clicks on the save button, the book is saved. On the navbar, the user is able to navigate to the saved books. All the books the that the user saves will be populated in the results area on that page. The user has the option to view or delete the books.
 
 
-#### Screenshot
-<img src="" alt="app" width="600px">
+## Screenshot
+<img src="client/public/search.png" alt="app" width="600px">
+<img src="client/public/saved.png" alt="app" width="600px">
 
 ## Questions  
 <a href="https://github.com/nashwalters"><img alt="Ask me anything" src="https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg" target="_blank" /></a>  
