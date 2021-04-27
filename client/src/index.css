@@ -1,13 +1,42 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+body, .form-control {
+  background-color: whitesmoke;
+}
+.jumbotron {
+  margin-top: 2rem;
+  background-color: lightskyblue;
 }
 
-#banner{
-  height: 30vh;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.bg-light {
+  background-color: lightskyblue !important;
 }
 
+.text-black {
+  margin-top: 2rem;
+  padding: 0.625rem;
+}
 
+p {
+  text-align: justify;
+}
+
+.text-muted {
+  text-align: center !important;
+}
+
+img {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.625rem;
+  margin-right: auto;
+  width: 100%;
+}
+
+.btn {
+  margin-bottom: 0.313rem;
+}
+
+.btn-success, .btn-danger  {
+  margin-right: 0.625rem;
+  
+}

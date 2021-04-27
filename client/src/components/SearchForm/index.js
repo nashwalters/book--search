@@ -26,6 +26,7 @@ const SearchForm = () => {
 
   function handleFormSubmit(event) {
     event.preventDefault();
+    setSearch("");
     loadBooks(search);
   }
 
@@ -56,12 +57,15 @@ const SearchForm = () => {
       <div className="bg-light text-black">
         <h4>Results</h4>
         {books.length ?
-        books.map((book) => {
+        books.map((book, index) => {
           return <Card
+            key={index}
             title={book.volumeInfo.title}
             authors={book.volumeInfo.authors}
             description={book.volumeInfo.description}
-            image={book.volumeInfo.imageLinks.thumbnail}
+            image={book.volumeInfo.imageLinks === undefined
+              ? ""
+              : book.volumeInfo.imageLinks.thumbnail}
             link={book.volumeInfo.previewLink}
             />;
         }) :

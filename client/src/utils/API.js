@@ -1,19 +1,20 @@
-import axios from 'axios'
-require('dotenv').config()
-
+import axios from "axios";
+require("dotenv").config();
 
 export default {
-    searchBooks: function(query){
-        return axios.get(`https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyBD-PuZyjpsyWM7sqfplPDvDCTLzZ6bMYA`)
-    },
-    saveBooks: function(bookData){
-        return axios.post("/api/books", bookData)
-    },
-    getBooks: function(){
-        return axios.get("/api/books")
-    },
-    deleteBook: function(id){
-        console.log('[API.deleteBook] function reached ...')
-        return axios.delete("/api/books/" + id)
-    }
-}
+  searchBooks: function (query) {
+    return axios.get(
+      `https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyBD-PuZyjpsyWM7sqfplPDvDCTLzZ6bMYA`
+    );
+  },
+  saveBooks: function (bookData) {
+    return axios.post("/api/books", bookData);
+  },
+  getBooks: function () {
+    return axios.get("/api/books");
+  },
+  deleteBook: function (id) {
+    console.log("[API.deleteBook] function reached ...");
+    return axios.delete("/api/books/" + id);
+  },
+};
